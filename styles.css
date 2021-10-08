@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+body {
+    background-image: url(/images/unsplash2.jpg);
+    background-size: cover;
+    background-position: center; 
+    font-family: sans-serif;
+    
+}
+.menu-bar {
+    background:green;
+    text-align: center;
+    font-weight: bold;
+
+}
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color:white;
+}
+.menu-bar ul li {
+    width: 120px;
+    margin: 20px;
+    padding: 10px;
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    color:white;
+}
+.active, .menu-bar ul li:hover {
+    background: black;
+    border-radius: 3px;
+    transition: 0.6s ease;
+    
+}
+.sub-menu-1 {
+    display: none;
+    
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display:block;
+    position: absolute;
+    background: black;
+    margin-top: 15px;
+    margin-left: -15px;
+    transition: 0.6s ease;
+}
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+    transition: 0.6s ease;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: #b2ff00;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2 {
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: black;
+
+}
+.sub-menu-1 li a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
